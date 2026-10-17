@@ -40,7 +40,7 @@ Contraseña: la configurada en .env
 
 4. Crear las tablas
 
-Abrir el archivo schema.sql en MySQL Workbench y ejecutarlo.
+Abrir el archivo db/schema.sql en MySQL Workbench y ejecutarlo.
 
 Esto crea las 8 tablas de la base de datos gestion_academica.
 
@@ -48,6 +48,7 @@ Esto crea las 8 tablas de la base de datos gestion_academica.
 
 Abrir una terminal en la carpeta del proyecto y ejecutar:
 
+cd db
 python generar_datos.py
 
 Esto genera el archivo datos_sinteticos.sql con 780 registros ficticios.
@@ -69,10 +70,10 @@ Deberían aparecer 8 tablas, 150 estudiantes y 320 calificaciones.
 
 docker-compose.yml — Inicia MySQL con Docker.
 
-schema.sql — Crea las tablas.
+db/schema.sql — Crea las tablas.
 
-generar_datos.py — Genera los datos ficticios.
+db/generar_datos.py — Genera los datos ficticios.
 
-datos_sinteticos.sql — Contiene los registros generados.
+db/02_datos_sinteticos.sql — Contiene los registros generados.
 
 .env.example — Ejemplo de configuración.
