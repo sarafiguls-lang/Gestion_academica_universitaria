@@ -49,11 +49,12 @@ Esto crea las 8 tablas de la base de datos gestion_academica.
 Abrir una terminal en la carpeta del proyecto y ejecutar:
 
 cd db
+
 python generar_datos.py
 
-Esto genera el archivo datos_sinteticos.sql con 780 registros ficticios.
+Esto genera el archivo 02_datos_sinteticos.sql con 780 registros ficticios.
 
-Después, abrir datos_sinteticos.sql en MySQL Workbench y ejecutarlo para cargar los datos.
+Después, abrir db/datos_sinteticos.sql en MySQL Workbench y ejecutarlo para cargar los datos.
 
 6. Comprobar que funciona
 
